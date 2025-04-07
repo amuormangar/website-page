@@ -4,11 +4,16 @@
 body{
     overflow-x: hidden;
 }
+#dit{
+    width: 30%;
+
+}
 
 .navigation{
     display: flex;
     font-size: 20px;
     margin-top: 20px;
+    align-items: center;
 }
 ul{
     display: flex;
@@ -16,6 +21,7 @@ ul{
     margin: 0 auto;
     font-size: 20px;
     margin-top: 35px;
+    list-style: none;
 }
 nav button{
     background-color:palevioletred;
@@ -50,19 +56,35 @@ a{
     color: red;
 }
 .improve p{
-    font-size: 20px;
+    font-size: 30px;
     padding-top: 200px;
+    text-align: center;
+    
 }
 .improve button{
     border-radius: 20%;
+    text-align: center;
+    font-size: 20px;
 }
 .solution{
-    background-color: white;
+    background-color: rgb(250, 245, 245);
     width: 30%;
+    transform: skewX(-20deg);
 }
 .software-business p{
     text-align: center;
     font-size: 30px;
+}
+#man{
+    width: 40%;
+    margin-left: 170px;
+    transform: rotate(-20deg);
+}
+.women{
+    position: absolute;
+    margin-left: 1400px;
+    top: 300px;
+
 }
 .logos{
     display: flex;
@@ -95,7 +117,7 @@ height: 5%;
 }
 .working-product{
     padding-bottom: 100px;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 .working-product h1{
     text-align: center;
@@ -122,11 +144,11 @@ height: 5%;
     margin-left: 200px;
 }
 .number-subscriber h1{
-    font-size: 20px;
+    font-size: 30px;
     color: rgb(63, 60, 60);
     margin-bottom: 100px;
 }
-.Active-group{
+.active-group{
     display: flex;
     padding-top: 300px;
     padding-right: 300px;
@@ -138,20 +160,48 @@ height: 5%;
     margin-left: 200px;
     
 }
+.account button{
+background-color: rgb(226, 146, 213);
+width: 40%;
+border-radius: 20%;
+height: 10%;
+}
+.account{
+    padding-bottom: 150px;
+    
+}
+.account p {
+    font-size: 30px;
+}
+.account span{
+    font-size: 20px;
+}
+.customer button{
+    width: 50%;
+    height: 10%;
+    border-radius: 20%;
+    background-color: darkblue;
+    color: white;
+
+}
 .help-customer{
     text-align: center;
     margin: auto;
     font-size: 40px;
+    padding-bottom: 90px;
+    transform: skew(60%);
 
 }
 .help-customer span{
     color: red;
     text-decoration: underline;
 }
-.right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-  }
+.boost button{
+    background-color: rgb(245, 143, 237);
+    width: 80%;
+    border-radius: 20%;
+    height: 10%;
+}
 .clients{
     text-align: center;
     font-size: 30px;
@@ -166,33 +216,34 @@ height: 5%;
     margin-left: 200px;
     margin-bottom: 100px;
 }
-.person1{
+.payment{
     padding-top: 50px;
-    border: solid 5px blue;
+    border: solid 1px purple;
     width: 40%;
     border-radius: 10%;
     padding-right: 20px;
+    padding: 20px 20px 20px 20px;
 }
-#person1-image{
+#payment-image{
     border: 50%;
     padding-left: 40px;
 }
-.person1 i{
+.payment i{
     padding-left: 250px;
     padding-top: 40px;
 }
-.person1 h2 {
+.payment h2 {
     margin-left: 40px;
 
 }
-.person1 p{
+.payment p{
     margin-left: 40px;
     
 }
-.person1 span{
+.payment span{
     margin-left: 40px;
 }
-.person2 i{
+.make-payment i{
     padding-left: 250px;
     padding-top: 40px;
     color: rgb(207, 178, 9);
@@ -218,11 +269,12 @@ height: 5%;
 .mobile span{
     text-decoration: underline;
 }
-.rectangle{
-    width: 1900px;
+.footer{
+    width: 2000px;
     height: 400px;
     background-color: rgb(1, 1, 22);
     color: white;
+    margin-right: 300px;
 }
 .product{
     display: flex;
@@ -234,6 +286,16 @@ height: 5%;
 }
 .download button{
     border-radius: 20%;
-    gap: 70px;
+    gap: 90px;
 }
 
+@media only screen and (max-width: 600px) {
+    .improve-charge {grid-area: 1 / span 6;}
+    .solution {grid-area: 2 / span 6;}
+    .businessmen {grid-area: 3 / span 6;}
+    .mobile {grid-area: 4 / span 6;}
+    .rectangle {grid-area: 5 / span 6;}
+  }
+  
+
+  
